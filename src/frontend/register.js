@@ -55,15 +55,15 @@ function Register() {
         if (response.ok) {
           const data = await response.json();
           console.log(data); // Log response from the backend
-          // Add logic to handle successful response
+          // handle successful response
           alert('User registered successfully!');
         } else {
-          // Add logic to handle unsuccessful response
+          // handle unsuccessful response
           alert('ERROR! User registration unsuccessful!');
         }
       } catch (error) {
         console.error('Error:', error);
-        // Add logic to handle error (e.g., display error message)
+        // handle error
         alert('ERROR! User registration unsuccessful!');
       }
     } else {
